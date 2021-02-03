@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AE315PressureHelp", "AE315PressureHelp\AE315PressureHelp.csproj", "{BB3EE0C1-3FED-468D-BAC1-3818B107F554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ARM_Maybe|Any CPU = ARM_Maybe|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB3EE0C1-3FED-468D-BAC1-3818B107F554}.ARM_Maybe|Any CPU.ActiveCfg = ARM_Maybe|x86
+		{BB3EE0C1-3FED-468D-BAC1-3818B107F554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3EE0C1-3FED-468D-BAC1-3818B107F554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3EE0C1-3FED-468D-BAC1-3818B107F554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3EE0C1-3FED-468D-BAC1-3818B107F554}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39F32EEE-2B88-40C7-BC97-9CA982854AD1}
+	EndGlobalSection
+EndGlobal
