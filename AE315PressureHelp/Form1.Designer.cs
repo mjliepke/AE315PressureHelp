@@ -38,11 +38,13 @@
             this.p_inf_PaTextbox = new System.Windows.Forms.TextBox();
             this.T_inf_KLabel = new System.Windows.Forms.Label();
             this.T_inf_KTextBox = new System.Windows.Forms.TextBox();
-            this.q_in_h20Label = new System.Windows.Forms.Label();
-            this.q_inf_in_H20TextBox = new System.Windows.Forms.TextBox();
+            this.q_PaLabel = new System.Windows.Forms.Label();
+            this.q_inf_PaTextBox = new System.Windows.Forms.TextBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.rhoLabel = new System.Windows.Forms.Label();
             this.rho_SITextbox = new System.Windows.Forms.TextBox();
+            this.q_inf_H20Label = new System.Windows.Forms.Label();
+            this.q_inf_in_H20TextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // p_inf_in_HGTextbox
@@ -135,22 +137,22 @@
             this.T_inf_KTextBox.TabIndex = 8;
             this.T_inf_KTextBox.TextChanged += new System.EventHandler(this.UpdateDensity);
             // 
-            // q_in_h20Label
+            // q_PaLabel
             // 
-            this.q_in_h20Label.AutoSize = true;
-            this.q_in_h20Label.Location = new System.Drawing.Point(163, 127);
-            this.q_in_h20Label.Name = "q_in_h20Label";
-            this.q_in_h20Label.Size = new System.Drawing.Size(55, 13);
-            this.q_in_h20Label.TabIndex = 11;
-            this.q_in_h20Label.Text = "q [in H2O]";
+            this.q_PaLabel.AutoSize = true;
+            this.q_PaLabel.Location = new System.Drawing.Point(163, 127);
+            this.q_PaLabel.Name = "q_PaLabel";
+            this.q_PaLabel.Size = new System.Drawing.Size(35, 13);
+            this.q_PaLabel.TabIndex = 11;
+            this.q_PaLabel.Text = "q [Pa]";
             // 
-            // q_inf_in_H20TextBox
+            // q_inf_PaTextBox
             // 
-            this.q_inf_in_H20TextBox.Enabled = false;
-            this.q_inf_in_H20TextBox.Location = new System.Drawing.Point(137, 143);
-            this.q_inf_in_H20TextBox.Name = "q_inf_in_H20TextBox";
-            this.q_inf_in_H20TextBox.Size = new System.Drawing.Size(100, 20);
-            this.q_inf_in_H20TextBox.TabIndex = 10;
+            this.q_inf_PaTextBox.Enabled = false;
+            this.q_inf_PaTextBox.Location = new System.Drawing.Point(137, 143);
+            this.q_inf_PaTextBox.Name = "q_inf_PaTextBox";
+            this.q_inf_PaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.q_inf_PaTextBox.TabIndex = 10;
             // 
             // calculateButton
             // 
@@ -179,16 +181,35 @@
             this.rho_SITextbox.TabIndex = 13;
             this.rho_SITextbox.TextChanged += new System.EventHandler(this.UpdateDynamicPressure);
             // 
+            // q_inf_H20Label
+            // 
+            this.q_inf_H20Label.AutoSize = true;
+            this.q_inf_H20Label.Location = new System.Drawing.Point(163, 169);
+            this.q_inf_H20Label.Name = "q_inf_H20Label";
+            this.q_inf_H20Label.Size = new System.Drawing.Size(55, 13);
+            this.q_inf_H20Label.TabIndex = 16;
+            this.q_inf_H20Label.Text = "q [in H2O]";
+            // 
+            // q_inf_in_H20TextBox
+            // 
+            this.q_inf_in_H20TextBox.Enabled = false;
+            this.q_inf_in_H20TextBox.Location = new System.Drawing.Point(137, 185);
+            this.q_inf_in_H20TextBox.Name = "q_inf_in_H20TextBox";
+            this.q_inf_in_H20TextBox.Size = new System.Drawing.Size(100, 20);
+            this.q_inf_in_H20TextBox.TabIndex = 15;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 196);
+            this.ClientSize = new System.Drawing.Size(261, 221);
+            this.Controls.Add(this.q_inf_H20Label);
+            this.Controls.Add(this.q_inf_in_H20TextBox);
             this.Controls.Add(this.rhoLabel);
             this.Controls.Add(this.rho_SITextbox);
             this.Controls.Add(this.calculateButton);
-            this.Controls.Add(this.q_in_h20Label);
-            this.Controls.Add(this.q_inf_in_H20TextBox);
+            this.Controls.Add(this.q_PaLabel);
+            this.Controls.Add(this.q_inf_PaTextBox);
             this.Controls.Add(this.T_inf_KLabel);
             this.Controls.Add(this.T_inf_KTextBox);
             this.Controls.Add(this.p_inf_PaLabel);
@@ -218,11 +239,13 @@
         private System.Windows.Forms.TextBox p_inf_PaTextbox;
         private System.Windows.Forms.Label T_inf_KLabel;
         private System.Windows.Forms.TextBox T_inf_KTextBox;
-        private System.Windows.Forms.Label q_in_h20Label;
-        private System.Windows.Forms.TextBox q_inf_in_H20TextBox;
+        private System.Windows.Forms.Label q_PaLabel;
+        private System.Windows.Forms.TextBox q_inf_PaTextBox;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Label rhoLabel;
         private System.Windows.Forms.TextBox rho_SITextbox;
+        private System.Windows.Forms.Label q_inf_H20Label;
+        private System.Windows.Forms.TextBox q_inf_in_H20TextBox;
     }
 }
 

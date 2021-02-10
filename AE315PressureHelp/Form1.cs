@@ -72,10 +72,12 @@ namespace AE315PressureHelp
         {
             try
             {
-                q_inf_in_H20TextBox.Text = (.5 * Convert.ToDouble(rho_SITextbox.Text) * Math.Pow(Convert.ToDouble(v_infTextBox.Text), 2)).ToString();
+                q_inf_PaTextBox.Text = (.5 * Convert.ToDouble(rho_SITextbox.Text) * Math.Pow(Convert.ToDouble(v_infTextBox.Text), 2)).ToString();
+                q_inf_in_H20TextBox.Text = ((.5* 0.00401865) * Convert.ToDouble(rho_SITextbox.Text) * Math.Pow(Convert.ToDouble(v_infTextBox.Text), 2)).ToString();
             }
             catch (Exception)
             {
+                q_inf_PaTextBox.Text = "ERROR";
                 q_inf_in_H20TextBox.Text = "ERROR";
             }
         }
