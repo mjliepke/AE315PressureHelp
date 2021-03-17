@@ -1,6 +1,6 @@
 ﻿namespace AE315PressureHelp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -198,7 +198,7 @@
             this.q_inf_in_H20TextBox.Size = new System.Drawing.Size(100, 20);
             this.q_inf_in_H20TextBox.TabIndex = 15;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,8 +220,8 @@
             this.Controls.Add(this.T_inf_FTextBox);
             this.Controls.Add(this.p_inf_in_HgLabel);
             this.Controls.Add(this.p_inf_in_HGTextbox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Pressure Helper";
             this.ResumeLayout(false);
             this.PerformLayout();
 
